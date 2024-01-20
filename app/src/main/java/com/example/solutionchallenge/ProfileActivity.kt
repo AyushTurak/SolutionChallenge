@@ -55,7 +55,7 @@ class ProfileActivity : AppCompatActivity() {
  })
 
         btn_contributor.setOnClickListener {
-            mDbRef.child("user").child(uid!!).setValue(User("contributor"))
+            mDbRef.child("user").child("contributor").child(uid!!).setValue(User("contributor"))
         }
 
     }
